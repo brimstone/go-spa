@@ -1,0 +1,10 @@
+<html>
+<script src="script.js"></script>
+<div id="content"></div>
+<script>
+getJson("/api/test", function(data) {
+	console.log(data)
+	document.getElementById("content").innerHTML = data.args
+})
+</script>
+</html>
